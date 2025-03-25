@@ -15,6 +15,21 @@ class _LetsStartScreenState extends State<LetsStartScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        bottomNavigationBar: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Image.asset("assets/VIP_Icon.png"),
+            5.horizontalSpace,
+            const Text(
+              "Your VIP Access",
+              style: TextStyle(
+                fontWeight: FontWeight.w700,
+                color: Color(0xffAE8625),
+                fontSize: 24,
+              ),
+            )
+          ],
+        ),
         backgroundColor: Colors.white,
         appBar: AppBar(
           elevation: 0,
@@ -194,21 +209,6 @@ class _LetsStartScreenState extends State<LetsStartScreen> {
               ),
             ),
             20.verticalSpace,
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Image.asset("assets/VIP_Icon.png"),
-                5.horizontalSpace,
-                const Text(
-                  "Your VIP Access",
-                  style: TextStyle(
-                    fontWeight: FontWeight.w700,
-                    color: Color(0xffAE8625),
-                    fontSize: 24,
-                  ),
-                )
-              ],
-            )
           ],
         ));
   }
